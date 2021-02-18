@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="./assets/style/scss/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+  <section class="sticky-top navbar-light ">
+    <div class="container-lg">
+    <nav class="navbar navbar-expand-md navbar-light align-items-baseline py-3 py-md-4">
+      <a class="navbar-brand order-1 order-md-0 py-0" href="./index.html">HALOHA</a>
+        <button class="navbar-toggler border-0 pl-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mb-1"></span>
+        </button>
+        <div class="collapse navbar-collapse collapse-position navbar-light" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-center pl-3 pl-lg-0 ">
+                <li class="nav-item mr-0 mr-md-5">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="material-icons">language</span>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">English</a>
+                          <a class="dropdown-item" href="#">繁體中文</a>
+                          <a class="dropdown-item" href="#">日本語</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item mr-0 mr-md-5">
+                    <a class="nav-link text-roboto" href="#">Sign up</a>
+                </li>
+                <li class="nav-item d-none d-md-block text-roboto">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+      <a href="login.html" class="d-md-none order-2 order-md-0 text-roboto">Login</a>
+    </nav>
+   </div>
+</section>
+
+  
+<!---------------------bg-----------------------> 
+<div class="container-fluid d-none d-md-block">
+    <div class="row">
+        <div class="col-lg-7 login_bg"
+            style="background-image: url('https://hexschool.github.io/webLayoutTraining1st/week8/login.jpg');"></div>
+    </div>
+</div>
+  
+<!---------------------login-style----------------------->
+<div class="container mt-4">
+    <!-- logo -->
+    <div class="row mb-4 mb-md-5 mb-lg-6">
+        <nav class="navbar navbar-expand-md  align-items-baseline py-3 py-md-4">
+        <h1 class=" order-1 order-md-0 py-0"><a href="index.html" class="logo_img1">HALOHA訂房</a></h1>
+    </div>
+    <div class="row pt-lg-6 login_bg-h">
+        <!-- leftside top -->
+        <div class="col-lg-6 d-none d-lg-flex flex-column">
+            <h2 class="text-title text-xxl font-weight-extrabold mb-3">An ideal hotel makes a wonderful Trip.</h2>
+            <p class="text-sm text-gray610">Discover your dream destination and hotel on ALOHA.com</p>
+        </div>
+        <!-- rightside top -->
+        <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-2">
+            <h2 class="text-title font-weight-bold mb-3">Login</h2>
+            <form class="needs-validation text-gray610" novalidate>
+                <div class="form-group">
+                    <label for="mail" class="d-block mb-1">Email</label>
+                    <input type="email" name="mail" id="mail" class="form-control d-block w-100 h-56p" placeholder=""
+                        required>
+                    <div class="invalid-feedback">請確實填寫您的email帳號</div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="d-block mb-1">Passwords</label>
+                    <input type="password" name="password" id="password" class="form-control d-block w-100 h-56p mb-4"
+                        placeholder="" required>
+                    <div class="invalid-feedback">請確實填寫密碼</div>
+                </div>
+                <p class="text-xs mb3">By signing in or creating an account, you agree with our<a href="#" class="insidetext"> Terms & Conditions</a> and <a href="#" class="insidetext">Privacy Statement</a> </p>
+                <div class="form-group custom-control custom-checkbox checkbox-lg mb-2x">
+                    <input type="checkbox" name="rememberMe" id="rememberMe" class="custom-control-input mr-1"
+                        value="rememberMe">
+                    <label class="custom-control-label" for="rememberMe">Remember me</label>
+                </div>
+                <button class="btn btn-primary font-weight-bold w-100 py-3 mb-2" type="button" onclick="window.location.href='member.html'">Login</button>
+                <p class="text-center">Don’t have an account yet? <a href="#" class="insidetext font-weight-bold">Sign up</a></p>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="row d-none d-md-block">
+        <div
+            class="col-md-6 offset-md-3 col-lg-5 offset-lg-0 d-flex justify-content-center justify-content-lg-start mt-auto">
+            <span class="text-sm text-white bg-gray910 rounded px-3 py-2">
+                <span class="material-icons h6 vertical-align-bot mb-0 mr-2">place</span>
+                <span>Osaka Castel, Japan</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+  <!---------------------Subscribe----------------------->
+<section class="bg-light py-4 py-md-92p">
+  <div class="container px-lg-220p">
+      <h3 class="h4 text-xxl-md text-title font-weight-extrabold text-center mb-4">Subscribe for Exclusive Offer</h3>
+      <form class="input-group w-100 h-56p px-md-5 px-lg-6">
+          <input type="email" id="mail"
+              class="form-control border border-primary border-2 rounded-left w-64percent h-100 pl-3"
+              placeholder="Your email address">
+          <input type="submit" value="Subscribe"
+              class="form-control btn btn-primary font-weight-bold text-uppercase w-36percent h-100 px-4">
+      </form>
+  </div>
+</section>
+
+<!---------------------footer----------------------->
+<footer class="text-sm container text-gray610 py-4">
+<div class="row align-items-baseline">
+  <div class="col-12 col-md-5 col-lg-3 order-1 order-md-0 d-flex justify-content-center justify-content-md-start">
+    <p class="footer_copyright mb-0">© 2020 HALOHA, Inc. All rights reserved.</p>
+  </div>
+  <ul class="col-12 col-md-5 col-lg-4 offset-md-2 offset-lg-0 d-flex justify-content-center justify-content-md-end mb-0">
+    <li class="mr-4"><a href="#">FAQs</a></li>
+    <li class="mr-4"><a href="#">Terms of use</a></li>
+    <li><a href="#">Privacy policy</a></li>
+  </ul>
+  <div class="col-lg-3 offset-lg-2 d-none d-lg-flex justify-content-end">
+    <div class="mr-4 d-flex align-items-center ">
+      <span class="material-icons ">language</span>
+      <form>
+        <div class="form-group mb-0">
+          <select class="form-control mb-0">
+            <option selected>English</option>
+            <option>繁體中文</option>
+            <option>日本語</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="mr-4 d-flex align-items-center">
+      <span class="material-icons">attach_money</span>
+      <form>
+        <div class="form-group mb-0">
+          <select class="form-control mb-0">
+            <option selected>TWD</option>
+            <option>USD</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>AOS.init();</script>
+</body>
+
+</html>
